@@ -51,8 +51,8 @@ module "warehouse" {
 - Defaults are safe, not convenient: `force_destroy` and
   `delete_contents_on_destroy` stay `false` unless you opt in.
 - Region is a variable everywhere. Examples use `asia-northeast1`.
-- Labels are merged, never overwritten silently, so cost allocation by
-  team/environment keeps working when modules are composed.
+- Labels are variables on every module, so cost allocation by
+  team/environment works when modules are composed.
 
 ## Roadmap
 
