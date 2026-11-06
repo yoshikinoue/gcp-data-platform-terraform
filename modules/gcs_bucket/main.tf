@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "this" {
-  project = var.project_id
-  name    = var.name
+  project  = var.project_id
+  name     = var.name
   location = var.location
 
   storage_class               = var.storage_class
